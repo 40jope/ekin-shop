@@ -1,0 +1,70 @@
+.rodape {
+    background: rgb(20, 20, 20);
+    color: var(--background-principal);
+    padding: 2rem;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--background-principal);
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.container-rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 0 2rem 0;
+}
+
+.rodape-linha {
+    height: 1px;
+    background: var(--background-principal);
+}
+
+.lista-categorias li, .lista-menus li {
+    list-style: none;
+}
+
+.titulo-lista {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.item_lista-categorias {
+    font-size: 14px;
+}
+
+.item_lista-menus {
+    font-size: 18px;
+    padding: 0 0 0.5rem 0;
+}
+
+.dev-link {
+    font-size: 16px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .container-rodape {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px;
+    }
+
+    .rodape-linha {
+        display: none;
+    }
+
+    .topo-btn, .titulo-lista, .item_lista-menus {
+        font-size: 24px;
+    }
+
+    .item_lista-categorias {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekin - Just Do Whatever</title>
+    <link rel="shortcut icon" href="./img/icons/ekin-favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="nav__bar">
+                <img src="./img/icons/ekin-logo.svg" alt="Iken logo">
+                <ul class="menu__desktop">
+                    <li class="item-menu__desktop">Brasileirão</li>
+                    <li class="item-menu__desktop">Feminino</li>
+                    <li class="item-menu__desktop">Masculino</li>
+                    <li class="item-menu__desktop">Seleções</li>
+                </ul>
+                <div>
+                    <ul class="nav">
+                        <li class="item-nav"><img src="./img/icons/actions-heart-svgrepo-com.svg" alt="Favritos" class="icons-nav menu-favoritos" botao-abrir></li>
+                        <li class="item-nav"><img src="./img/icons/actions-bag-svgrepo-com.svg" alt="Minha sacola" class="icons-nav menu-carrinho" botao-abrir></li>
+                        <li class="item-nav item-menu_hamburguer"><img src="./img/icons/actions-menu-svgrepo-com.svg" alt="Menu" class="icons-nav menu-mobile" botao-abrir></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="favoritos" id="display-menu-favoritos">
+            <div class="favoritos-cabecalho">
+                <h3 class="favoritos__titulo">Favoritos</h3>
+                <img src="./img/icons/fechar-icon.svg" alt="Fechar" class="menu-favoritos" botao-fechar>
+            </div>
+            <div class="container-favoritos" id="container-favoritos">
+                <!-- <div class="card__carrinho">
+                    <img src="./img/camisa-brasil-masc-1.png" alt="Camisa" class="imagem-card__carrinho">
+                    <div class="descricao-card__carrinho">
+                        <p class="titulo-card__carrinho">Camisa Nike Brasil I 2023/24</p>
+                        <p class="tag-card__carrinho">Masculino</p>
+                        <p class="preco-card__carrinho">$199,99</p>
+                        <div class="botoes-card__produto">
+                            <button class="card__produto-botao"><img src="./img/icons/actions-heart-svgrepo-com.svg" alt="" class="icons-card"></button>
+                            <button class="card__produto-botao"><img src="./img/icons/actions-bag-svgrepo-com.svg" alt="" class="icons-card"></button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="carrinho" id="display-menu-carrinho">
+            <div class="carrinho-cabecalho">
+                <h3 class="carrinho__titulo">Minha Sacola</h3>
+                <img src="./img/icons/fechar-icon.svg" alt="Fechar" class="menu-carrinho" botao-fechar>
+            </div>
+            <div class="container-carrinho" id="container-carrinho">
+                <!-- <div class="card__carrinho">
+                    <img src="./img/camisa-brasil-masc-1.png" alt="Camisa" class="imagem-card__carrinho">
+                    <div class="descricao-card__carrinho">
+                        <p class="titulo-card__carrinho">Camisa Nike Brasil I 2023/24</p>
+                        <p class="tag-card__carrinho">Masculino</p>
+                        <p class="preco-card__carrinho">$199,99</p>
+                        <div class="container__quantidade-carrinho">
+                            <div class="quantidade-card__carrinho">
+                                <button class="quantidade-botao">-</button>
+                                <span class="quantidade-produto">1</span>
+                                <button class="quantidade-botao">+</button>
+                            </div>
+                            <button class="remover__produto-carrinho" id="remover-carrinho">
+                                <img src="./img/icons/excluir-icon.svg" alt="Remover do Carrinho">
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="footer-carrinho">
+                <h3 class="preco-carrinho" id="preco-carrinho">Total: $0,00</h3>
+                <button class="botao-finalizar-compra" id="botao-finalizar-compra">Finalizar compra</button>
+            </div>
+        </div>
+        <ul class="menu__mobile" id="display-menu-mobile">
+            <li class="cabecalho-menu__mobile">
+                <h3 class="cabecalho-menu__mobile-titulo">Categorias</h3>
+                <img src="./img/icons/fechar-icon.svg" alt="Fechar" class="menu-mobile" botao-fechar>
+            </li>
+            <li class="item-menu__mobile">Brasileirão</li>
+            <li class="item-menu__mobile">Feminino</li>
+            <li class="item-menu__mobile">Masculino</li>
+            <li class="item-menu__mobile">Seleções</li>
+        </ul>
+    </header>
+    <section class="banners" id="banners">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/promo-vasco.jpg" alt="1">
+                    <p class="swiper-slide-paragrafo">Camisa do Vasco para temporada</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/promo-selecoes-nike.jpg" alt="2">
+                    <p class="swiper-slide-paragrafo">Coleção seleções para copa do mundo</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/promo-palmeiras.jpg" alt="3">
+                    <p class="swiper-slide-paragrafo">Manto Palestra para 2023</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/promo-gremio.jpg" alt="4">
+                    <p class="swiper-slide-paragrafo">Uniforme Grêmio 2023</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/promo-selecao-brasileira.jpg" alt="5">
+                    <p class="swiper-slide-paragrafo">Nike Joga pra Sempre</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/promo-icons.jpg" alt="6">
+                    <p class="swiper-slide-paragrafo">Linha Adidas Icon</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/promo-corinthians-3.jpg" alt="7">
+                    <p class="swiper-slide-paragrafo">Nova camisa III do Corinthians</p>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <main class="produtos" id="container-produtos">
+        <!-- <div class="card__produto" id="card-produto-${elemento.id}">
+            <img src="${elemento.img}" alt="${elemento.titulo}" class="imagem-card__produto">
+            <div class="descricao-card__produto">
+                <p class="titulo-card__produto">${elemento.titulo}</p>
+                <p class="tag-card__produto">${elemento.genero}</p>
+                <p class="preco-card__produto">R$${elemento.preco}</p>
+                <div class="botoes-card__produto">
+                    <label for="checkbox-fav-${elemento.id}">
+                        <input type="checkbox" class="checkbox-fav" id="checkbox-fav-${elemento.id}">
+                        <button class="card__produto-botao botao__fav"><img src="./img/icons/actions-heart-svgrepo-com.svg" alt="" class="icons-card" id="icon-coracao-${elemento.id}"></button>
+                    </label>
+                    <button class="card__produto-botao" id="adicionar-carrinho-${elemento.id}"><img src="./img/icons/actions-bag-svgrepo-com.svg" alt="" class="icons-card"></button>
+                </div>
+            </div>
+        </div> -->
+    </main>
+    <footer class="rodape">
+        <div class="container-rodape">
+            <a href="#banners" class="topo-btn">Voltar ao topo ↑</a>
+            <span class="rodape-linha"></span>
+            <ul class="lista-categorias">
+                <li class="titulo-lista">Categorias</li>
+                <li class="item_lista-categorias">Brasileirão</li>
+                <li class="item_lista-categorias">Seleções</li>
+                <li class="item_lista-categorias">Feminino</li>
+                <li class="item_lista-categorias">Masculino</li>
+            </ul>
+            <span class="rodape-linha"></span>
+            <ul class="lista-menus">
+                <li class="item_lista-menus">Meu Carrinho</li>
+                <li class="item_lista-menus">Favoritos</li>
+            </ul>
+        </div>
+        <p class="dev-link">Desenvolvido por <a href="https://www.linkedin.com/in/joão-pedro-de-oliveira-nunes-0b5276195/" target="_blank">João Pedro Nunes</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
