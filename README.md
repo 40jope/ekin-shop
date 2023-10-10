@@ -40,7 +40,7 @@ Ekin.com é a uma loja de camisetas de futebol online para o publico adulto, fem
 
 ## Demonstração
 
-[Link do projeto](*url*)
+[Link do projeto](https://ekin-shop.vercel.app)
 
 &nbsp;
 
