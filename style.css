@@ -2,6 +2,7 @@
 @import url(./estilos/banners.css);
 @import url(./estilos/produtos.css);
 @import url(./estilos/rodape.css);
+@import url(./estilos/checkout.css);
 
 * {
     margin: 0;
@@ -14,6 +15,7 @@
     --background-principal: #ffffff;
     --background-secundario: rgb(247, 247, 247);
     --preto: rgb(0,0,0);
+    --vermelho: #ff0000;
 }
 
 body {

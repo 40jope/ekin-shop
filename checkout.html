@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalize sua Compra - Ekin</title>
+    <link rel="shortcut icon" href="./img/icons/ekin-favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="cabecalho-checkout">
+        <img src="./img/icons/ekin-logo.svg" alt="Ekin.com" class="logo-cabecalho-checkout">
+    </header>
+    <section class="carrinho-checkout">
+        <h3 class="titulo-checkout">Seus Produtos</h3>
+        <div class="container-carrinho-checkout" id="container-carrinho-checkout">
+            <!-- <div class="card-checkout">
+                <img src="${produto.img}" alt="${produto.titulo}" class="imagem-card-checkout">
+                <div class="container-titulo-card-checkout">
+                        <p class="titulo-card-checkout">${produto.titulo}</p>
+                        <p class="tag-card-checkout">${produto.genero}</p>
+                </div>
+                <p class="preco-card-checkout">R$${produto.preco}</p>
+                <div class="container-quantidade-card-checkout">
+                    <div class="quantidade-card-checkout">
+                        <button class="quantidade-botao-checkout" id="subtrair-produto-${produto.id}">-</button>
+                        <span class="quantidade-produto-checkout" id="quantidade-produto-${produto.id}">${idsProdutoCarrinhoComQuantidade[produto.id]}</span>
+                        <button class="quantidade-botao-checkout" id="adicionar-produto-${produto.id}">+</button>
+                    </div>
+                    <button class="remover__produto-carrinho" id="remover-produto-${produto.id}">
+                        <img src="./img/icons/excluir-icon.svg" alt="Remover do Carrinho">
+                    </button>
+                </div>
+            </div> -->
+        </div>
+        <h3 class="preco-carrinho" id="preco-carrinho">Total: $0,00</h3>
+    </section>
+    <form id="formulario-checkout">
+        <div class="inputs-fomulario">
+            <div class="grupo-formulario-checkout">
+                <h3 class="titulo-checkout" >Dados Pessoais</h3>
+                <input type="text" placeholder="Digite seu nome completo" class="input-nome input-formulario-checkout" id="input-nome">
+                <input type="email" placeholder="Digite seu email" class="input-email input-formulario-checkout" id="input-email">
+                <input type="number" placeholder="Digite seu cpf" class="input-cpf input-formulario-checkout" id="input-cpf">
+            </div>
+            <div class="grupo-formulario-checkout">
+                <h3 class="titulo-checkout" >Dados de Entrega</h3>
+                <input type="text" placeholder="Endereço" class="input-endereco input-formulario-checkout" id="input-endereco">
+                <input type="number" placeholder="Número" class="input-numero input-formulario-checkout" id="input-numero">
+                <input type="text" placeholder="Bairro" class="input-bairro input-formulario-checkout" id="input-bairro">
+                <input type="text" placeholder="Cidade" class="input-cidade input-formulario-checkout" id="input-cidade">
+                <input type="text" placeholder="UF" class="input-uf input-formulario-checkout" id="input-uf">
+            </div>
+            <div class="grupo-formulario-checkout">
+                <h3 class="titulo-checkout" >Dados de pagamento</h3>
+                <input type="text" placeholder="Nome no cartão" class="input-cartao-nome input-formulario-checkout" id="input-cartao-nome">
+                <input type="number" placeholder="Número do cartão" class="input-cartao-numero input-formulario-checkout" id="input-cartao-numero">
+                <input type="number" placeholder="CVC" class="input-cartao-cvc input-formulario-checkout" id="input-cartao-cvc">
+                <input type="number" placeholder="dd/aa" class="input-cartao-validade input-formulario-checkout" id="input-cartao-validade">
+            </div>
+        </div>
+
+        <p id="alerta"></p>
+
+        <input type="submit" class="btn-finalizar-compra" value="Finalizar Compra">
+    </form>
+
+    <script src="./funcionalidades/checkout.js" type="module"></script>
+</body>
+</html>
