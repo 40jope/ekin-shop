@@ -115,3 +115,6 @@ export function atualizarPrecoCarrinho () {
 // if (idsProdutoCarrinhoComQuantidade === null ) {
 //      console.log("gremio total")
 // }
+
+const botaoCheckout = document.querySelector('#botao-comprar');
+botaoCheckout.addEventListener('click', () => {window.location.href = "checkout.html";})

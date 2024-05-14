@@ -66,6 +66,23 @@
     font-size: 1rem;
 }
 
+.botao-cancelar-compra {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-cancelar-compra button {
+    color: rgb(160, 160, 160);
+    background-color: var(--background-secundario);
+    border-radius: 15px;
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.botao-cancelar-compra button:hover {
+    text-decoration: underline;
+}
+
 /* formulario */
 #formulario-checkout {
     display: flex;

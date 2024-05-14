@@ -95,7 +95,7 @@
     padding: 0 0 0.5rem 0;
 }
 
-.botao-finalizar-compra {
+.botao-comprar {
     width: 100%;
     background: var(--preto);
     color: var(--background-principal);
@@ -104,7 +104,7 @@
     padding: 0.75rem;
 }
 
-.botao-finalizar-compra:hover {
+.botao-comprar:hover {
     background: #424242;
 }
 
