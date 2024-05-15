@@ -13,9 +13,9 @@
 </head>
 <body>
     <header class="cabecalho-checkout">
-        <img src="./img/icons/ekin-logo.svg" alt="Ekin.com" class="logo-cabecalho-checkout">
+        <a href="index.html"><img src="./img/icons/ekin-logo.svg" alt="Ekin.com" class="logo-cabecalho-checkout"></a>
     </header>
-    <section class="carrinho-checkout">
+    <section class="carrinho-checkout" id="carrinho-checkout">
         <h3 class="titulo-checkout">Seus Produtos</h3>
         <div class="container-carrinho-checkout" id="container-carrinho-checkout">
             <!-- <div class="card-checkout">
@@ -72,7 +72,15 @@
 
         <input type="submit" class="btn-finalizar-compra" value="Finalizar Compra">
     </form>
+    <footer class="rodape">
+        <div class="container-rodape">
+            <a href="" class="topo-btn">Voltar ao topo ↑</a>
+            <span class="rodape-linha"></span>
+        </div>
+        <p class="dev-link">Desenvolvido por <a href="https://www.linkedin.com/in/joão-pedro-de-oliveira-nunes-0b5276195/" target="_blank">João Pedro Nunes</a></p>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./funcionalidades/checkout.js" type="module"></script>
 </body>
 </html>

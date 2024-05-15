@@ -129,12 +129,60 @@
     padding: 0.75rem;
 }
 
+.alerta {
+    display: none;
+}
+
+.alerta-aberto{
+    display: block;
+    color: #e2f204;
+    font-size: 40px;
+}
+
+.alerta-titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.alerta-texto{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.alerta-btn{
+    border-radius: 20px;
+    border: none;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    font-size: 18px;
+}
+
+.alerta-btn-confirm {
+    background: hsl(0, 0%, 0%);
+    color: white;
+}
+.alerta-btn-confirm:hover {
+    background: rgb(44, 44, 44);
+}
+
+.alerta-btn-cancel {
+    background: #f7f7f7;
+}
+
+.alerta-btn-cancel:hover {
+    text-decoration: underline;
+}
+
+
 @media screen and (min-width: 1024px) {
 
     .cabecalho-checkout {
         background: var(--background-secundario);
         justify-content: start;
         margin-bottom: 2rem;
+        padding: 0.75rem 2.5rem;
     }
 
     .carrinho-checkout {

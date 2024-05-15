@@ -60,10 +60,37 @@ atualizarPrecoCarrinho()
 const botaoCancelarCompra = document.getElementById('botao-cancelar-compra');
 
 botaoCancelarCompra.addEventListener('click', () => {
-
-    alert("Tem certeza que deseja abandonar Finalização de compra?")
-
-    // window.location.href = "index.html";
+    Swal.fire({
+        title: "Tem certeza?",
+        html: `<p class="alerta-texto">Cancelar a compra irá te levar para a página inicial. Seu carrinho continuará com os mesmo itens.</p>`,
+        icon: "warning",
+        iconColor: "#000000",
+        showCancelButton: true,
+        confirmButtonText: "Cancelar compra",
+        cancelButtonText: "Continuar comprando",
+        buttonsStyling: false,
+        customClass: {
+            title: 'alerta-titulo',
+            text: 'alerta-texto',
+            icon: 'alerta-icone',
+            confirmButton: 'alerta-btn alerta-btn-confirm',
+            cancelButton: 'alerta-btn alerta-btn-cancel',
+            }
+        }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+            html: `<p class="alerta-texto">Sua compra foi cancelada.</p>`,
+            icon: "error",
+            iconColor: "#000000",
+            buttonsStyling: false,
+            customClass: {
+            confirmButton: 'alerta-btn alerta-btn-confirm',
+            }
+            });
+    
+            setTimeout(() => {window.location.href = "index.html"}, 1500)
+        }
+        });
 })
 
 
@@ -118,9 +145,23 @@ if (formCheckout) {
             return(listaValidacao)
         }
 
-        alert("compra feita")
+        //alert("compra feita")
+        e.preventDefault();
+
+        Swal.fire({
+            html: `<p class="alerta-texto">Sua compra foi realizada.</p>`,
+            icon: "success",
+            iconColor: "#000000",
+            confirmButton: "O",
+            buttonsStyling: false,
+            customClass: {
+            confirmButton: 'alerta-btn alerta-btn-confirm',
+            }
+        }).then((result) => {
+            if (result.isConfirmed){
+                window.location.href = "index.html"
+            };
+        })
     })
 }
-
-
 
