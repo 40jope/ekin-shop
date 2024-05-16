@@ -2,6 +2,7 @@ import { expondoCatalogo } from "./funcionalidades/expondo-catalogo.js";
 import { abrirMenu, fecharMenu } from "./funcionalidades/menus.js"
 import { renderizarProdutosCarrinho, atualizarPrecoCarrinho } from "./funcionalidades/carrinho.js";
 import { renderizarProdutosFavoritos, favoritosCheckTrue } from "./funcionalidades/favoritos.js";
+import { testLog } from "./funcionalidades/filtro.js"
 
 // swiper
 const swiper = new Swiper('.swiper', {
@@ -22,3 +23,4 @@ expondoCatalogo()
 renderizarProdutosCarrinho()
 renderizarProdutosFavoritos()
 atualizarPrecoCarrinho()
+// testLog()

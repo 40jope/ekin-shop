@@ -145,7 +145,6 @@ if (formCheckout) {
             return(listaValidacao)
         }
 
-        //alert("compra feita")
         e.preventDefault();
 
         Swal.fire({
@@ -159,6 +158,7 @@ if (formCheckout) {
             }
         }).then((result) => {
             if (result.isConfirmed){
+                localStorage.removeItem("carrinho")
                 window.location.href = "index.html"
             };
         })

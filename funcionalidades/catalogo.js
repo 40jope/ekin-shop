@@ -5,7 +5,7 @@ export const catalogo = [
         titulo: "Camisa Nike Brasil I 2023/24",
         genero: "Masculina",
         preco: 199.99,
-        tagPrincipal: "selecoes",
+        tag: "Seleções",
     },
     {
         id: "2",
@@ -13,7 +13,7 @@ export const catalogo = [
         titulo: "Camisa Nike Brasil II 2023/24",
         genero: "Masculina",
         preco: 199.99,
-        tagPrincipal: "selecoes",
+        tag: "Seleções",
     },
     {
         id: "3",
@@ -21,7 +21,7 @@ export const catalogo = [
         titulo: "Camisa Nike Brasil I 2023/24",
         genero: "Feminina",
         preco: 199.99,
-        tagPrincipal: "selecoes",
+        tag: "Seleções",
     },
     {
         id: "4",
@@ -29,7 +29,7 @@ export const catalogo = [
         titulo: "Camisa Nike Brasil II 2023/24",
         genero: "Feminina",
         preco: 199.99,
-        tagPrincipal: "selecoes",
+        tag: "Seleções",
     },
     {
         id: "5",
@@ -37,7 +37,7 @@ export const catalogo = [
         titulo: "Camisa Umbro Gremio I 2023",
         genero: "Masculina",
         preco: 349.90,
-        tagPrincipal: "brasileirao"
+        tag: "Brasileirão"
     },
     {
         id: "6",
@@ -45,7 +45,7 @@ export const catalogo = [
         titulo: "Camisa Umbro Gremio II 2023",
         genero: "Masculina",
         preco: 359.90,
-        tagPrincipal: "brasileirao"
+        tag: "Brasileirão"
     },
     {
         id: "7",
@@ -53,7 +53,7 @@ export const catalogo = [
         titulo: "Camisa Umbro Gremio I 2023",
         genero: "Feminina",
         preco: 299.90,
-        tagPrincipal: "brasileirao"
+        tag: "Brasileirão"
     },
     {
         id: "8",
@@ -61,6 +61,6 @@ export const catalogo = [
         titulo: "Camisa Umbro Gremio II 2023",
         genero: "Feminina",
         preco: 299.90,
-        tagPrincipal: "brasileirao"
+        tag: "Brasileirão"
     }
 ];
