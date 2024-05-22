@@ -1,5 +1,6 @@
 import { catalogo } from "../funcionalidades/catalogo.js";
 
+//carinho no checkout
 function lerLocalStorage (chave) {
     return JSON.parse(localStorage.getItem(chave));
 }
@@ -56,7 +57,7 @@ function atualizarPrecoCarrinho () {
 renderizarProdutosCarrinho()
 atualizarPrecoCarrinho()
 
-
+//alertas da pagina
 const botaoCancelarCompra = document.getElementById('botao-cancelar-compra');
 
 botaoCancelarCompra.addEventListener('click', () => {
@@ -93,8 +94,22 @@ botaoCancelarCompra.addEventListener('click', () => {
         });
 })
 
+//mascara de formulario
+$('#input-telefone').mask('(00) 00000-0000');
+$('#input-cpf').mask('000.000.000-00', {reverse: true});
+$('#input-cep').mask('00000-000');
+$('#input-uf').mask('AA', {
+    translation: {
+      'A': {
+        pattern: /[A-Za-z]/,
+      }
+    }
+  });
+$('#input-cartao-numero').mask('0000 0000 0000 0000');
+$('#input-cartao-cvc').mask('000');
+$('#input-cartao-validade').mask('00/00');
 
-
+//validaçao do formulario
 const formCheckout = document.getElementById("formulario-checkout")
 
 if (formCheckout) {
@@ -129,9 +144,11 @@ if (formCheckout) {
         function listaValidacaoInput () {
             var listaValidacao = {
                 'input-nome': "Nome não preenchido, ",
-                'input-cpf': "CPF não preenchido, ",
+                'input-telefone': "Telefone não preenchido, ",
                 'input-email': "Email não preenchido, ",
+                'input-cpf': "CPF não preenchido, ",
                 'input-endereco': "Endereço não preenchido, ",
+                'input-cep': "CEP não preenchido, ",
                 'input-numero': "Numero do endereço não preenchido, ",
                 'input-bairro': "Bairro não preenchido, ",
                 'input-cidade': "Cidade não preenchida, ",
