@@ -122,9 +122,10 @@
         list-style: none;
         font-size: 1.5rem;
         padding: 1.5rem 1rem;
+        cursor: pointer;
     }
 
-    .item-menu__desktop:hover {
+    .item-menu__desktop:hover, .botao-filtro-ativo {
         border-bottom: solid 2px var(--preto);
         cursor: pointer;
     }

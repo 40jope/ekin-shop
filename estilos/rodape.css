@@ -36,6 +36,7 @@
 
 .item_lista-categorias {
     font-size: 14px;
+    list-style: none;
 }
 
 .item_lista-menus {
@@ -51,7 +52,7 @@
 @media screen and (min-width: 1024px) {
     
     .container-rodape {
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-around;
         padding: 40px;
     }
@@ -66,5 +67,7 @@
 
     .item_lista-categorias {
         font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
     }
 }

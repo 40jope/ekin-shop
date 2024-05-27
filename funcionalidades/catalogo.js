@@ -62,5 +62,21 @@ export const catalogo = [
         genero: "Feminina",
         preco: 299.90,
         tag: "Brasileirão"
+    },
+    {
+        id: "9",
+        img: "https://static.netshoes.com.br/produtos/camisa-arsenal-2324-icon-sn-adidas-masculina/16/FB8-4744-016/FB8-4744-016_zoom1.jpg?ts=1695182458&",
+        titulo: "Camisa Icon Arsenal",
+        genero: "Masculina",
+        preco: 399.99,
+        tag: "Icons"
+    },
+    {
+        id: "10",
+        img: "https://assets.adidas.com/images/w_600,f_auto,q_auto/7caf260c2b774c7b94bb94ee74a2fd81_9366/Camisa_1_Inter_Miami_CF_24-25_Rosa_IP6027_01_laydown.jpg",
+        titulo: "Camisa Inter Miami",
+        genero: "Feminina",
+        preco: 349.99,
+        tag: "Internacional"
     }
 ];

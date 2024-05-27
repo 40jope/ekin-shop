@@ -18,7 +18,7 @@ import { adicionarAosFavoritos, removerDosFavoritos, favoritosCheckTrue } from "
 export function expondoCatalogo () {
     for (const elemento of catalogo) {
         const cardProduto = 
-        `<div class="card__produto" id="card-produto-${elemento.id}">
+        `<div class="card__produto ${elemento.tag}" id="card-produto-${elemento.id}">
             <img src="${elemento.img}" alt="${elemento.titulo}" class="imagem-card__produto">
             <div class="descricao-card__produto">
                 <p class="titulo-card__produto">${elemento.titulo}</p>
