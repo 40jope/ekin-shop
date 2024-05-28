@@ -182,3 +182,7 @@ if (formCheckout) {
     })
 }
 
+document.querySelector(".topo-btn").addEventListener('click', () => {
+    document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
+})
+

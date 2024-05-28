@@ -15,6 +15,7 @@ function removerDoCarrinho (idProduto) {
     salvarLocalStorage("carrinho", idsProdutoCarrinhoComQuantidade)
     atualizarPrecoCarrinho()
     renderizarProdutosCarrinho();
+    verificarStorageCarrinho ();
 }
 
 function adicionarQuantidadeProduto (idProduto) {
@@ -93,6 +94,7 @@ export function adicionarAoCarrinho (idProduto) {
     salvarLocalStorage("carrinho", idsProdutoCarrinhoComQuantidade);
     criandoCard(idProduto);
     atualizarPrecoCarrinho();
+    verificarStorageCarrinho ();
 } 
 
 export function atualizarPrecoCarrinho () {
@@ -110,11 +112,21 @@ export function atualizarPrecoCarrinho () {
     }
 }
 
-// console.log(idsProdutoCarrinhoComQuantidade)
-
-// if (idsProdutoCarrinhoComQuantidade === null ) {
-//      console.log("gremio total")
-// }
-
 const botaoCheckout = document.querySelector('#botao-comprar');
+
+ export function verificarStorageCarrinho () {
+    const storageCarrinho = localStorage.getItem('carrinho');
+
+    if (!storageCarrinho || storageCarrinho === '{}') {
+    atualizarPrecoCarrinho();
+    document.getElementById('preco-carrinho').innerText = `Total: R$0,00`;
+    botaoCheckout.disabled = true;
+    botaoCheckout.classList.add('botao-comprar-desativado');
+    } else {
+    console.log('contém itens.');
+    botaoCheckout.disabled = false;
+    botaoCheckout.classList.remove('botao-comprar-desativado');
+    }
+}
+
 botaoCheckout.addEventListener('click', () => {window.location.href = "checkout.html";})

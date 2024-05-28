@@ -1,8 +1,8 @@
 import { expondoCatalogo } from "./funcionalidades/expondo-catalogo.js";
 import { abrirMenu, fecharMenu } from "./funcionalidades/menus.js"
-import { renderizarProdutosCarrinho, atualizarPrecoCarrinho } from "./funcionalidades/carrinho.js";
+import { renderizarProdutosCarrinho, atualizarPrecoCarrinho, verificarStorageCarrinho } from "./funcionalidades/carrinho.js";
 import { renderizarProdutosFavoritos, favoritosCheckTrue } from "./funcionalidades/favoritos.js";
-import { filtroProduto } from "./funcionalidades/filtro.js"
+import { filtroProduto, filtroGenero } from "./funcionalidades/filtro.js"
 import { catalogo } from "./funcionalidades/catalogo.js";
 
 // swiper
@@ -19,9 +19,13 @@ const swiper = new Swiper('.swiper', {
       },
   });
   
+document.querySelector(".topo-btn").addEventListener('click', () => {
+    document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
+})
 
 expondoCatalogo()
 renderizarProdutosCarrinho()
 renderizarProdutosFavoritos()
 atualizarPrecoCarrinho()
-// testLog()
+verificarStorageCarrinho()
+

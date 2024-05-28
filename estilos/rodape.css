@@ -9,10 +9,6 @@
     color: var(--background-principal);
 }
 
-.rodape a:hover {
-    text-decoration: underline;
-}
-
 .container-rodape {
     display: flex;
     flex-direction: column;
@@ -30,23 +26,31 @@
 }
 
 .titulo-lista {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 0.5rem;
 }
 
 .item_lista-categorias {
-    font-size: 14px;
+    font-size: 12px;
     list-style: none;
 }
 
 .item_lista-menus {
-    font-size: 18px;
+    font-size: 16px;
     padding: 0 0 0.5rem 0;
 }
 
 .dev-link {
     font-size: 16px;
     text-align: center;
+}
+
+.rodape a:hover, .topo-btn:hover, .item_lista-menus:hover, .item_lista-categorias:hover {
+    text-decoration: underline;
+}
+
+.rodape a, .topo-btn, .item_lista-menus, .item_lista-categorias {
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -61,13 +65,8 @@
         display: none;
     }
 
-    .topo-btn, .titulo-lista, .item_lista-menus {
-        font-size: 24px;
-    }
-
     .item_lista-categorias {
-        font-size: 18px;
-        cursor: pointer;
+        font-size: 16px;
         text-decoration: none;
     }
 }

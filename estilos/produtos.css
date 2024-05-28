@@ -1,9 +1,30 @@
+main {
+    padding: 4rem 0;
+}
+
+.container-botao-genero {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.botao-filtro-genero {
+    list-style: none;
+    padding: 0.75rem;
+    background: var(--background-secundario);
+    border-radius: 20px;
+}
+
+.botao-filtro-genero:hover, .botao-filtro-genero-ativo {
+    background: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
 .produtos {
     display: flex;
     justify-content: center;
     gap: 2rem 0.5rem;
     flex-wrap: wrap;
-    padding: 4rem 0;
 }
 /* no carrinho */
 .card__carrinho {
@@ -70,7 +91,7 @@
     width: 45%;
 }
 
-.esconder-card {
+.esconder-card, .esconder-card-genero {
     display: none;
 }
 
@@ -82,11 +103,11 @@
     padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
-.titulo-card__produto, .tag-card__produto, .preco-card__produto {
+.titulo-card__produto, .genero-card__produto, .preco-card__produto {
     font-size: 14px;
 }
 
-.tag-card__produto {
+.genero-card__produto {
     margin-top: 0.25rem;
 }
 

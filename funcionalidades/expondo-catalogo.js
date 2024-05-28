@@ -18,11 +18,11 @@ import { adicionarAosFavoritos, removerDosFavoritos, favoritosCheckTrue } from "
 export function expondoCatalogo () {
     for (const elemento of catalogo) {
         const cardProduto = 
-        `<div class="card__produto ${elemento.tag}" id="card-produto-${elemento.id}">
+        `<div class="card__produto ${elemento.tag} ${elemento.genero}" id="card-produto-${elemento.id}">
             <img src="${elemento.img}" alt="${elemento.titulo}" class="imagem-card__produto">
             <div class="descricao-card__produto">
                 <p class="titulo-card__produto">${elemento.titulo}</p>
-                <p class="tag-card__produto">${elemento.genero}</p>
+                <p class="genero-card__produto">${elemento.genero}</p>
                 <p class="preco-card__produto">R$${elemento.preco}</p>
                 <div class="botoes-card__produto">
                     <label for="checkbox-fav-${elemento.id}">
