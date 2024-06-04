@@ -26,7 +26,7 @@ main {
     gap: 2rem 0.5rem;
     flex-wrap: wrap;
 }
-/* no carrinho */
+
 .card__carrinho {
     display: flex;
     border-radius: 10px;
@@ -84,7 +84,6 @@ main {
     padding: 4px 4px 0 4px;
 }
 
-/* no catalogo */
 .card__produto {
     display: flex;
     flex-direction: column;

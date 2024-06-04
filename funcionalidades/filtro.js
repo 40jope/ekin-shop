@@ -1,20 +1,13 @@
 import { catalogo } from "../funcionalidades/catalogo.js";
 
-//chamar todos os botoes de categoria
 const tagFiltro = document.querySelectorAll('.tag-filtro');
 
-//rodar uma rotina para cada um com o respectivo nome deles
 tagFiltro.forEach ( (elemento) => {
     elemento.addEventListener('click', (e) => {
         filtroProduto(e.target.textContent)
         document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
-        //.scrollIntoView({ behavior: 'smooth' });
     })
 })
-
-// window.onload = () => {
-//     document.querySelectorAll('.card__produto').classList.remove('esconder-card')
-// }
 
 export function filtroProduto (textoFiltro) {
 
@@ -73,8 +66,4 @@ export function filtroGenero (valor) {
         }
     })
 }
-
-//.classList.add('botao-filtro-ativo');
-
-//rodar rotina pra mostrar tag do catalogo
-//chamar funçao renderizar produto apenas para produtos correspondentes 
+ 

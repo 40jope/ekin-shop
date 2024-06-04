@@ -83,7 +83,6 @@
     text-decoration: underline;
 }
 
-/* formulario */
 #formulario-checkout {
     display: flex;
     flex-direction: column;
@@ -209,7 +208,6 @@
         align-items: center;
     }
 
-    /* formulario */
     #formulario-checkout {
         align-items: center;
         gap: 1.5rem;

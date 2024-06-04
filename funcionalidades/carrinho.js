@@ -105,10 +105,6 @@ export function atualizarPrecoCarrinho () {
         precoTotalCarrinho += catalogo.find((p) => p.id === idProdutoNoCarrinho).preco * idsProdutoCarrinhoComQuantidade[idProdutoNoCarrinho];
 
         precoTotal.innerText = `Total: R$${precoTotalCarrinho.toFixed(2).replace(".", ",")}`;
-        
-        // if (idsProdutoCarrinhoComQuantidade[idProdutoNoCarrinho] === 0) {
-        //     precoTotal.innerText = "Total: $0,00"
-        // }
     }
 }
 
@@ -123,7 +119,6 @@ const botaoCheckout = document.querySelector('#botao-comprar');
     botaoCheckout.disabled = true;
     botaoCheckout.classList.add('botao-comprar-desativado');
     } else {
-    console.log('contém itens.');
     botaoCheckout.disabled = false;
     botaoCheckout.classList.remove('botao-comprar-desativado');
     }

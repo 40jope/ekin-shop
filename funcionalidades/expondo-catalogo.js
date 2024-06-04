@@ -2,19 +2,6 @@ import { catalogo } from "../funcionalidades/catalogo.js";
 import { adicionarAoCarrinho } from "../funcionalidades/carrinho.js";
 import { adicionarAosFavoritos, removerDosFavoritos, favoritosCheckTrue } from "../funcionalidades/favoritos.js";
 
-//  const tagFiltro = document.querySelectorAll('.tag-filtro');
-
-//  tagFiltro.forEach ( (elemento) => {
-//      elemento.addEventListener('click', (e) => {
-//         expondoCatalogo(e.target.textContent)
-//         //console.log("clicou")
-//      })
-//  })
-
-// if (tagProduto === catalogo.tag) {
-//      console.log("gremio total")
-//  }
-
 export function expondoCatalogo () {
     for (const elemento of catalogo) {
         const cardProduto = 
@@ -56,8 +43,4 @@ export function expondoCatalogo () {
             }
         })
     }
-
-    // for (const elemento of catalogo) {
-    //     console.log(elemento.tag)
-    // }
 }
